@@ -1,7 +1,24 @@
 aid: airquality
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/airquality.png
 name: airquality
-description: airquality is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'AirQuality (爱优特) is a Shanghai-based manufacturer of high-efficiency electrostatic
+  air purification and disinfection products, including central air filtration systems, commercial
+  kitchen exhaust (hood) cleaners, odor-elimination units, and smart air-quality detection systems
+  for schools, hospitals, offices, shopping malls, and hotels. The company was surfaced as a portfolio
+  company of Qiming and added to the API Evangelist network as a stub. It is a hardware/manufacturing
+  business that publishes a consumer website and online shop but no public developer API, SDK, or
+  documentation surface at this time, so most enrichment artifacts are not applicable.'
 url: https://raw.githubusercontent.com/api-evangelist/airquality/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +31,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Air Quality
+- Air Purification
+- Environmental
+- Manufacturing
+- Hardware
+- IoT
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/airquality-domain-security.yml
 - type: Website
   url: https://airquality.com.cn
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
